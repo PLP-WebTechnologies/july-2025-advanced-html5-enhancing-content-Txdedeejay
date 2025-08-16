@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced HTML5 Form and Content </title>
+    
+</head>
+<body>
+    <header>
+        <h1>HTML5 Content & Form Showcase</h1>
+        <p>Demonstrating lists, tables, media, and a feature-rich HTML5 form.</p>
+    </header>
+    <main>
+        <section aria-labelledby="lists-section">
+            <h2 id="lists-section">Organized Content with Lists</h2>
+            <h3>Favorite Programming Languages (Ordered List)</h3>
+            <ol>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>Java</li>
+                <li>C#</li>
+                <li>Go</li>
+            </ol>
+            <h3>Web Development Skills (Unordered List)</h3>
+            <ul>
+                <li>HTML5 &amp; CSS3</li>
+                <li>Responsive Design</li>
+                <li>Accessibility</li>
+                <li>Version Control (Git)</li>
+                <li>APIs &amp; Web Services</li>
+            </ul>
+            <h3>Steps to Build a Web Page (Description List)</h3>
+            <dl>
+                <dt>Plan</dt>
+                <dd>Outline the structure and content.</dd>
+                <dt>Design</dt>
+                <dd>Create wireframes and choose a color scheme.</dd>
+                <dt>Develop</dt>
+                <dd>Write HTML, CSS, and JavaScript code.</dd>
+                <dt>Test</dt>
+                <dd>Check for errors and ensure accessibility.</dd>
+                <dt>Deploy</dt>
+                <dd>Publish the site online.</dd>
+            </dl>
+        </section>
+        <section aria-labelledby="table-section">
+            <h2 id="table-section">Sample Table: Weekly Study Schedule</h2>
+            <table>
+                <caption>Weekly Study Schedule</caption>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Subject</th>
+                        <th>Duration (hrs)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>Mathematics</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>Web Development</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>Data Science</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>Algorithms</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>Project Work</td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section aria-labelledby="media-section">
+            <h2 id="media-section">Embedded Media</h2>
+            <div class="media-group">
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80" alt="Laptop and code editor" width="100%" style="border-radius:6px;">
+                    <figcaption>Modern web development workspace</figcaption>
+                </figure>
+                <figure>
+                    <audio controls>
+                        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <figcaption>Sample background music</figcaption>
+                </figure>
+                <figure>
+                    <video controls width="220" poster="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80">
+                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <figcaption>Short sample video</figcaption>
+                </figure>
+            </div>
+        </section>
+        <section aria-labelledby="form-section">
+            <h2 id="form-section">Registration Form</h2>
+            <form action="#" method="post" autocomplete="on" novalidate>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="fullname">Full Name *</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="e.g. Jane Doe" required minlength="3" maxlength="40" autocomplete="name">
+
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" placeholder="e.g. jane@example.com" required autocomplete="email">
+
+                    <label for="dob">Date of Birth *</label>
+                    <input type="date" id="dob" name="dob" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Account Details</legend>
+                    <label for="username">Username *</label>
+                    <input type="text" id="username" name="username" required pattern="^[a-zA-Z0-9_]{5,15}$" title="5-15 characters, letters, numbers, and underscores only" placeholder="Choose a username" autocomplete="username">
+
+                    <label for="password">Password *</label>
+                    <input type="password" id="password" name="password" required minlength="8" maxlength="20" placeholder="Create a password" autocomplete="new-password">
+
+                    <label for="confirm-password">Confirm Password *</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required minlength="8" maxlength="20" placeholder="Re-enter your password" autocomplete="new-password">
+                </fieldset>
+                <fieldset>
+                    <legend>Preferences</legend>
+                    <label for="course">Select Course *</label>
+                    <select id="course" name="course" required>
+                        <option value="">--Please choose--</option>
+                        <option value="webdev">Web Development</option>
+                        <option value="datasci">Data Science</option>
+                        <option value="ai">Artificial Intelligence</option>
+                        <option value="cyber">Cybersecurity</option>
+                    </select>
+
+                    <label>Mode of Study *</label>
+                    <input type="radio" id="online" name="mode" value="online" required>
+                    <label for="online" style="display:inline;">Online</label>
+                    <input type="radio" id="onsite" name="mode" value="onsite">
+                    <label for="onsite" style="display:inline;">Onsite</label>
+
+                    <label>Skills (select all that apply):</label>
+                    <input type="checkbox" id="html" name="skills" value="HTML">
+                    <label for="html" style="display:inline;">HTML</label>
+                    <input type="checkbox" id="css" name="skills" value="CSS">
+                    <label for="css" style="display:inline;">CSS</label>
+                    <input type="checkbox" id="js" name="skills" value="JavaScript">
+                    <label for="js" style="display:inline;">JavaScript</label>
+                    <input type="checkbox" id="python" name="skills" value="Python">
+                    <label for="python" style="display:inline;">Python</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <label for="bio">Short Bio</label>
+                    <textarea id="bio" name="bio" rows="3" maxlength="200" placeholder="Tell us a little about yourself..."></textarea>
+
+                    <label for="referral">How did you hear about us?</label>
+                    <input type="text" id="referral" name="referral" readonly value="PLP Academy Website">
+                </fieldset>
+                <button type="submit">Register</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 PLP Academy. All rights reserved.</p>
+    </footer>
+</body>
+</html>
